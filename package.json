@@ -1,0 +1,25 @@
+{
+  "name": "news-where",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"yarn run server\" \"cd client && yarn start\""
+  },
+  "author": "Van de Castro",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.0",
+    "react-redux": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
